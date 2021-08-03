@@ -1,26 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Random Number Game</title>
-</head>
-<body>
-    <h1>Random Number Game</h1>
-    <form class="generate-number">
-        <label>Generate a number between 0 and </label>
-        <input min = "1" type = "number" />      
-    </form>
-    <form class = "guess-number">
-        <label> Guess the number: </label>
-        <input type = "number" />
-        <button onclick = "randomChange()"> Play! </button>
-    </form>
+<html>
+  <head>
+    <title>Day6 Challenge</title>
+    <meta charset="UTF-8" />
+  </head>
 
-    <h5 id = "choose" class = "hidden"></h5>
-    <h4 id = "win-lost" class="hidden"></h4>
-    <script src="app.js"></script>
-</body>
+  <body>
+    <h1>Random Number Game</h1>
+    <form>
+      <div class="max-number">
+        <label>Generate a number between 0 and </label>
+        <input min="1" type="number" required />
+      </div>
+      <div class="guess-number">
+        <label>Guess the number: </label>
+        <input type="number" required />
+        <button>Play!</button>
+      <div>
+    </form>
+    <div class="hidden">
+      <h5 id="choose" ></h5>
+      <h3 id="win-lost"></h4>
+    </div>
+      <script src="app.js"></script>
+  </body>
 </html>
+
+
